@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_assetsys
+    username: root
+    password: 123456
+  jackson:
+    date-format: yyyy-MM-dd
+
+
+server:
+  port: 8080
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+logging:
+  level:
+    root=DEBUG:
+    org.mybatis.spring: DEBUG
+
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
